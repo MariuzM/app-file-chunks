@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { NavLink, Outlet } from 'react-router'
 
 const linkClass = ({ isActive }: { isActive: boolean }) =>
@@ -19,7 +20,9 @@ export const Layout = () => (
       </nav>
     </header>
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Outlet />
+      <Suspense fallback={<p className="text-slate-500">Loading…</p>}>
+        <Outlet />
+      </Suspense>
     </main>
   </div>
 )
