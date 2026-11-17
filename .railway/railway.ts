@@ -5,8 +5,7 @@ const repo = 'MariuzM/app-file-chunks'
 export default defineRailway(() => {
   const spa = service('spa', {
     source: github(repo, { branch: 'main' }),
-    build: 'cd apps/spa && bun run build',
-    start: 'cd apps/spa && bun run start',
+    build: { builder: 'DOCKERFILE', dockerfilePath: 'apps/spa/Dockerfile' },
     healthcheck: '/',
   })
 
