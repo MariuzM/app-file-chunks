@@ -1,9 +1,9 @@
-import { createFileRoute } from '@tanstack/react-router'
 import { CardTabs } from '#/components/CardTabs'
+import { createFileRoute } from '@tanstack/react-router'
 
 const cards = [
   { title: 'Card 1', body: 'First card. Click Next or tab 2 to continue.' },
-  { title: 'Card 2', body: 'Second card. Click Back or tab 1 to return.' },
+  { title: 'Card 2', body: '2222' },
 ]
 
 const Home = () => (
