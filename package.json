@@ -12,5 +12,8 @@
     "dev:start": "bun --filter start dev",
     "build": "bun --filter '*' build",
     "typecheck": "bun --filter '*' typecheck"
+  },
+  "devDependencies": {
+    "railway": "3.17.0"
   }
 }
