@@ -1,0 +1,16 @@
+{
+  "name": "app-file-chunks",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "bun --filter '*' dev",
+    "dev:spa": "bun --filter spa dev",
+    "dev:start": "bun --filter start dev",
+    "build": "bun --filter '*' build",
+    "typecheck": "bun --filter '*' typecheck"
+  }
+}
